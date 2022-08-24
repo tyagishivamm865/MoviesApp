@@ -4,8 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/user/AndroidStudioProjects/UFODemo/app/src/main/res/layout/activity_main.xml" value="0.2542991141219385" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/UFODemo/app/src/main/res/layout/fragment_showall.xml" value="0.13821138211382114" />
         <entry key="..\:/Users/user/AndroidStudioProjects/UFODemo/app/src/main/res/layout/itemimage.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/UFODemo/app/src/main/res/layout/itemrecycler.xml" value="0.176" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/UFODemo/app/src/main/res/layout/itemshowall.xml" value="0.22826086956521738" />
       </map>
     </option>
   </component>

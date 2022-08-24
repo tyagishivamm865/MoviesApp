@@ -1,18 +1,21 @@
 package com.example.ufodemo
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ufodemo.adapter.ChannelRecyclerViewAdapter
-import com.example.ufodemo.model.Category
 import com.example.ufodemo.model.Data
 import com.example.ufodemo.model.UserInfo
 import com.example.ufodemo.viewmodel.MovieViewModel
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.itemrecycler.*
+
 
 class MainActivity : AppCompatActivity() {
     lateinit var viewModel: MovieViewModel
@@ -21,6 +24,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
 initViewModel()
     createUser()
         recyclerView = findViewById(R.id.parentrecycler1)
