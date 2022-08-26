@@ -1,5 +1,6 @@
 package com.example.ufodemo.adapter
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -10,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.ufodemo.MainActivity
 import com.example.ufodemo.R
 import com.example.ufodemo.ShowAllFragment
 import com.example.ufodemo.model.Category
@@ -42,13 +44,14 @@ class ChannelRecyclerViewAdapter(val context: Context) :
         )
     }
 
+    @SuppressLint("ResourceType")
     override fun onBindViewHolder(holder: ChannelViewHolder, position: Int) {
         val channel = channel[position]
 
         holder.itemView.apply {
             textView.text = channel.channelName
             threeDots.setOnClickListener{
-                val appCompatActivity = it.context as AppCompatActivity
+                val appCompatActivity = it.context as MainActivity
                 Toast.makeText(context,"ShowAllFragment",Toast.LENGTH_SHORT).show()
                 val myFragment: Fragment = ShowAllFragment()
                 appCompatActivity.supportFragmentManager.beginTransaction()

@@ -15,11 +15,11 @@ interface ApiInterface {
 
 
     @Headers("content-Type:application/json", "X-API-Key:03a53461dfdf11ea85d10a5cd31394da")
-    @POST(".")
+    @POST("content/ChannelWiseContentlisting/")
     fun findUser(@Body userData: UserInfo): Call<Data>
 
     companion object {
-        val BASE_URL = "https://userqaapi.plexigo.com/api/content/ChannelWiseContentlisting/"
+        val BASE_URL = "https://userqaapi.plexigo.com/api/"
         fun getRetroInstance(): Retrofit {
             val logging = HttpLoggingInterceptor()
             logging.level = HttpLoggingInterceptor.Level.BODY

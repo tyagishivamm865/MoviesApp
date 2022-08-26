@@ -13,8 +13,7 @@ import com.example.ufodemo.adapter.ChannelRecyclerViewAdapter
 import com.example.ufodemo.model.Data
 import com.example.ufodemo.model.UserInfo
 import com.example.ufodemo.viewmodel.MovieViewModel
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.itemrecycler.*
+
 
 
 class MainActivity : AppCompatActivity() {
